@@ -1,286 +1,286 @@
-[2023-02-13 16:13:59,917] DEEPMD INFO    deepmd.entrypoints.train                      Calculate neighbor statistics... (add --skip-neighbor-stat to skip this step)
-[2023-02-13 16:14:49,377] DEEPMD INFO    deepmd.utils.neighbor_stat                    training data with min nbor dist: 1.7328681678957543
-[2023-02-13 16:14:49,379] DEEPMD INFO    deepmd.utils.neighbor_stat                    training data with max nbor size: [326]
-[2023-02-13 16:14:49,398] DEEPMD INFO    deepmd.entrypoints.train                       _____               _____   __  __  _____           _     _  _   
-[2023-02-13 16:14:49,398] DEEPMD INFO    deepmd.entrypoints.train                      |  __ \             |  __ \ |  \/  ||  __ \         | |   (_)| |  
-[2023-02-13 16:14:49,399] DEEPMD INFO    deepmd.entrypoints.train                      | |  | |  ___   ___ | |__) || \  / || |  | | ______ | | __ _ | |_ 
-[2023-02-13 16:14:49,399] DEEPMD INFO    deepmd.entrypoints.train                      | |  | | / _ \ / _ \|  ___/ | |\/| || |  | ||______|| |/ /| || __|
-[2023-02-13 16:14:49,399] DEEPMD INFO    deepmd.entrypoints.train                      | |__| ||  __/|  __/| |     | |  | || |__| |        |   < | || |_ 
-[2023-02-13 16:14:49,399] DEEPMD INFO    deepmd.entrypoints.train                      |_____/  \___| \___||_|     |_|  |_||_____/         |_|\_\|_| \__|
-[2023-02-13 16:14:49,399] DEEPMD INFO    deepmd.entrypoints.train                      Please read and cite:
-[2023-02-13 16:14:49,399] DEEPMD INFO    deepmd.entrypoints.train                      Wang, Zhang, Han and E, Comput.Phys.Comm. 228, 178-184 (2018)
-[2023-02-13 16:14:49,399] DEEPMD INFO    deepmd.entrypoints.train                      installed to:         /home/yaoyu/Downloads/git/deepmd-kit/_skbuild/linux-x86_64-3.7/cmake-install
-[2023-02-13 16:14:49,399] DEEPMD INFO    deepmd.entrypoints.train                      source :              v2.0.2-59-gc5f88f3-dirty
-[2023-02-13 16:14:49,399] DEEPMD INFO    deepmd.entrypoints.train                      source brach:         asc-2023
-[2023-02-13 16:14:49,399] DEEPMD INFO    deepmd.entrypoints.train                      source commit:        c5f88f3
-[2023-02-13 16:14:49,399] DEEPMD INFO    deepmd.entrypoints.train                      source commit at:     2022-01-02 22:27:00 +0800
-[2023-02-13 16:14:49,399] DEEPMD INFO    deepmd.entrypoints.train                      build float prec:     double
-[2023-02-13 16:14:49,399] DEEPMD INFO    deepmd.entrypoints.train                      build with tf inc:    /home/yaoyu/anaconda3/envs/dpsource/lib/python3.7/site-packages/tensorflow/include
-[2023-02-13 16:14:49,399] DEEPMD INFO    deepmd.entrypoints.train                      build with tf lib:    
-[2023-02-13 16:14:49,399] DEEPMD INFO    deepmd.train.run_options                      ---Summary of the training---------------------------------------
-[2023-02-13 16:14:49,399] DEEPMD INFO    deepmd.train.run_options                      running on:           gpu01
-[2023-02-13 16:14:49,399] DEEPMD INFO    deepmd.train.run_options                      computing device:     gpu:0
-[2023-02-13 16:14:49,400] DEEPMD INFO    deepmd.train.run_options                      CUDA_VISIBLE_DEVICES: unset
-[2023-02-13 16:14:49,400] DEEPMD INFO    deepmd.train.run_options                      Count of visible GPU: 2
-[2023-02-13 16:14:49,400] DEEPMD INFO    deepmd.train.run_options                      num_intra_threads:    2
-[2023-02-13 16:14:49,400] DEEPMD INFO    deepmd.train.run_options                      num_inter_threads:    32
-[2023-02-13 16:14:49,400] DEEPMD INFO    deepmd.train.run_options                      -----------------------------------------------------------------
-[2023-02-13 16:14:49,765] DEEPMD INFO    deepmd.utils.data_system                      ---Summary of DataSystem: training     -----------------------------------------------
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                      found 142 system(s):
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                                                          system  natoms  bch_sz   n_bch   prob  pbc
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                      data/cu.fcc.02x02x02/02.md/sys-0032/deepmd      32       1    1000  0.109    T
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                      data/cu.hcp.02x02x02/02.md/sys-0016/deepmd      16       2     500  0.054    T
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                      data/cu.bcc.02x02x02/02.md/sys-0016/deepmd      16       2     500  0.054    T
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                      -- x02.high_pressure/02.md/sys-0032/deepmd      32       1    1580  0.172    T
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                      -- x02.high_pressure/02.md/sys-0016/deepmd      16       2     770  0.084    T
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                      -- x02.high_pressure/02.md/sys-0016/deepmd      16       2     800  0.087    T
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000000/02.fp/data.008      16       2     150  0.016    T
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000000/02.fp/data.016      16       2     150  0.016    T
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000000/02.fp/data.000      32       1     300  0.033    T
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000007/02.fp/data.023      16       2       2  0.000    T
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000008/02.fp/data.008      16       2     150  0.016    T
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000008/02.fp/data.016      16       2     150  0.016    T
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000008/02.fp/data.000      32       1     300  0.033    T
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000010/02.fp/data.018      16       2       3  0.000    T
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000010/02.fp/data.002      32       1       9  0.001    T
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000010/02.fp/data.010      16       2       3  0.000    T
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000011/02.fp/data.019      16       2       2  0.000    T
-[2023-02-13 16:14:49,766] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000011/02.fp/data.003      32       1       9  0.001    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000011/02.fp/data.011      16       2       3  0.000    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000012/02.fp/data.012      16       2       5  0.001    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000012/02.fp/data.004      32       1       7  0.001    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000013/02.fp/data.005      32       1       7  0.001    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000014/02.fp/data.014      16       2       5  0.001    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000014/02.fp/data.022      16       2       2  0.000    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000014/02.fp/data.006      32       1       6  0.001    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000016/02.fp/data.008      16       2      26  0.003    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000016/02.fp/data.016      16       2     150  0.016    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000016/02.fp/data.000      32       1     300  0.033    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000018/02.fp/data.002      32       1      14  0.002    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000019/02.fp/data.019      16       2       2  0.000    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000019/02.fp/data.003      32       1      14  0.002    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000020/02.fp/data.012      16       2       2  0.000    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000020/02.fp/data.020      16       2       2  0.000    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000020/02.fp/data.004      32       1      10  0.001    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000021/02.fp/data.013      16       2       3  0.000    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000021/02.fp/data.021      16       2       4  0.000    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000021/02.fp/data.005      32       1      27  0.003    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000022/02.fp/data.006      32       1      12  0.001    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000023/02.fp/data.023      16       2       2  0.000    T
-[2023-02-13 16:14:49,767] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000023/02.fp/data.007      32       1       6  0.001    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000023/02.fp/data.015      16       2       3  0.000    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000024/02.fp/data.008      16       2       6  0.001    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000024/02.fp/data.016      16       2       4  0.000    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000024/02.fp/data.000      32       1      16  0.002    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000025/02.fp/data.017      16       2       5  0.001    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000025/02.fp/data.001      32       1      13  0.001    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000026/02.fp/data.018      16       2       8  0.001    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000026/02.fp/data.002      32       1      27  0.003    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000026/02.fp/data.010      16       2      12  0.001    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000027/02.fp/data.019      16       2      33  0.004    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000027/02.fp/data.003      32       1     157  0.017    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000027/02.fp/data.011      16       2      31  0.003    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000029/02.fp/data.013      16       2       3  0.000    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000030/02.fp/data.014      16       2       5  0.001    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000030/02.fp/data.022      16       2       5  0.001    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000030/02.fp/data.006      32       1      17  0.002    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000031/02.fp/data.023      16       2       3  0.000    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000031/02.fp/data.007      32       1       5  0.001    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000031/02.fp/data.015      16       2       4  0.000    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000032/02.fp/data.040      16       2      50  0.005    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000032/02.fp/data.024      12       3      33  0.004    T
-[2023-02-13 16:14:49,768] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000032/02.fp/data.064      16       2      50  0.005    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000032/02.fp/data.048      12       3      33  0.004    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000032/02.fp/data.032      12       3      33  0.004    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000032/02.fp/data.056      12       3      33  0.004    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000033/02.fp/data.065      16       2      37  0.004    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000033/02.fp/data.049      12       3      15  0.002    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000033/02.fp/data.033      12       3      10  0.001    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000033/02.fp/data.057      12       3      22  0.002    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000033/02.fp/data.041      16       2      50  0.005    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000033/02.fp/data.025      12       3       9  0.001    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000034/02.fp/data.066      16       2      49  0.005    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000034/02.fp/data.050      12       3       1  0.000    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000034/02.fp/data.034      12       3       2  0.000    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000034/02.fp/data.058      12       3      19  0.002    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000034/02.fp/data.042      16       2      50  0.005    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000034/02.fp/data.026      12       3       4  0.000    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000036/02.fp/data.064      16       2       6  0.001    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000037/02.fp/data.065      16       2      50  0.005    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000037/02.fp/data.049      12       3       8  0.001    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000037/02.fp/data.033      12       3      13  0.001    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000037/02.fp/data.057      12       3       9  0.001    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000037/02.fp/data.041      16       2      50  0.005    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000037/02.fp/data.025      12       3       3  0.000    T
-[2023-02-13 16:14:49,769] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000038/02.fp/data.066      16       2      50  0.005    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000038/02.fp/data.050      12       3       2  0.000    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000038/02.fp/data.034      12       3       3  0.000    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000038/02.fp/data.058      12       3       6  0.001    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000038/02.fp/data.042      16       2      50  0.005    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000039/02.fp/data.035      12       3       4  0.000    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000039/02.fp/data.059      12       3       3  0.000    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000039/02.fp/data.043      16       2      15  0.002    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000039/02.fp/data.027      12       3       6  0.001    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000039/02.fp/data.067      16       2      38  0.004    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000039/02.fp/data.051      12       3       5  0.001    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000040/02.fp/data.040      16       2      41  0.004    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000040/02.fp/data.024      12       3      13  0.001    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000040/02.fp/data.064      16       2      50  0.005    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000040/02.fp/data.048      12       3      23  0.003    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000040/02.fp/data.032      12       3      12  0.001    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000040/02.fp/data.056      12       3      12  0.001    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000041/02.fp/data.065      16       2      16  0.002    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000041/02.fp/data.049      12       3       6  0.001    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000041/02.fp/data.033      12       3       4  0.000    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000041/02.fp/data.057      12       3       4  0.000    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000041/02.fp/data.041      16       2      18  0.002    T
-[2023-02-13 16:14:49,770] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000041/02.fp/data.025      12       3       3  0.000    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000042/02.fp/data.066      16       2      50  0.005    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000042/02.fp/data.050      12       3       8  0.001    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000042/02.fp/data.034      12       3       5  0.001    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000042/02.fp/data.058      12       3       3  0.000    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000042/02.fp/data.042      16       2      50  0.005    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000042/02.fp/data.026      12       3      33  0.004    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000043/02.fp/data.035      12       3      10  0.001    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000043/02.fp/data.059      12       3      17  0.002    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000043/02.fp/data.043      16       2      50  0.005    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000043/02.fp/data.027      12       3       7  0.001    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000043/02.fp/data.067      16       2      50  0.005    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000043/02.fp/data.051      12       3      15  0.002    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000044/02.fp/data.040      16       2      25  0.003    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000044/02.fp/data.064      16       2      17  0.002    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000044/02.fp/data.048      12       3       3  0.000    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000044/02.fp/data.032      12       3       2  0.000    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000044/02.fp/data.056      12       3       4  0.000    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000045/02.fp/data.065      16       2      21  0.002    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000045/02.fp/data.049      12       3      13  0.001    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000045/02.fp/data.033      12       3       9  0.001    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000045/02.fp/data.057      12       3       7  0.001    T
-[2023-02-13 16:14:49,771] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000045/02.fp/data.041      16       2      16  0.002    T
-[2023-02-13 16:14:49,772] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000045/02.fp/data.025      12       3       4  0.000    T
-[2023-02-13 16:14:49,772] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000046/02.fp/data.066      16       2      44  0.005    T
-[2023-02-13 16:14:49,772] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000046/02.fp/data.050      12       3      17  0.002    T
-[2023-02-13 16:14:49,772] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000046/02.fp/data.034      12       3      20  0.002    T
-[2023-02-13 16:14:49,772] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000046/02.fp/data.058      12       3      22  0.002    T
-[2023-02-13 16:14:49,772] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000046/02.fp/data.042      16       2      37  0.004    T
-[2023-02-13 16:14:49,772] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000046/02.fp/data.026      12       3      22  0.002    T
-[2023-02-13 16:14:49,772] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000047/02.fp/data.035      12       3      33  0.004    T
-[2023-02-13 16:14:49,772] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000047/02.fp/data.059      12       3      33  0.004    T
-[2023-02-13 16:14:49,772] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000047/02.fp/data.043      16       2      50  0.005    T
-[2023-02-13 16:14:49,772] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000047/02.fp/data.027      12       3      33  0.004    T
-[2023-02-13 16:14:49,772] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000047/02.fp/data.067      16       2      50  0.005    T
-[2023-02-13 16:14:49,772] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000047/02.fp/data.051      12       3      33  0.004    T
-[2023-02-13 16:14:49,772] DEEPMD INFO    deepmd.utils.data_system                      --------------------------------------------------------------------------------------
-[2023-02-13 16:14:49,772] DEEPMD INFO    deepmd.train.trainer                          training without frame parameter
-[2023-02-13 16:14:59,649] DEEPMD INFO    deepmd.train.trainer                          built lr
-[2023-02-13 16:15:00,214] DEEPMD INFO    deepmd.train.trainer                          built network
-[2023-02-13 16:15:00,957] DEEPMD INFO    deepmd.train.trainer                          built training
-[2023-02-13 16:15:01,006] DEEPMD INFO    deepmd.train.trainer                          initialize model from scratch
-[2023-02-13 16:15:01,197] DEEPMD INFO    deepmd.train.trainer                          start training at lr 1.00e-03 (== 1.00e-03), decay_step 100, decay_rate 0.902500, final lr will be 3.51e-08
-[2023-02-13 16:15:04,353] DEEPMD INFO    deepmd.train.trainer                          batch     100 training time 2.54 s, testing time 0.02 s
-[2023-02-13 16:15:06,506] DEEPMD INFO    deepmd.train.trainer                          batch     200 training time 2.01 s, testing time 0.02 s
-[2023-02-13 16:15:08,665] DEEPMD INFO    deepmd.train.trainer                          batch     300 training time 2.02 s, testing time 0.02 s
-[2023-02-13 16:15:10,830] DEEPMD INFO    deepmd.train.trainer                          batch     400 training time 2.02 s, testing time 0.02 s
-[2023-02-13 16:15:13,065] DEEPMD INFO    deepmd.train.trainer                          batch     500 training time 2.07 s, testing time 0.02 s
-[2023-02-13 16:15:15,254] DEEPMD INFO    deepmd.train.trainer                          batch     600 training time 2.01 s, testing time 0.03 s
-[2023-02-13 16:15:17,407] DEEPMD INFO    deepmd.train.trainer                          batch     700 training time 2.00 s, testing time 0.02 s
-[2023-02-13 16:15:19,600] DEEPMD INFO    deepmd.train.trainer                          batch     800 training time 2.04 s, testing time 0.03 s
-[2023-02-13 16:15:21,791] DEEPMD INFO    deepmd.train.trainer                          batch     900 training time 2.04 s, testing time 0.02 s
-[2023-02-13 16:15:23,992] DEEPMD INFO    deepmd.train.trainer                          batch    1000 training time 2.06 s, testing time 0.03 s
-[2023-02-13 16:15:26,156] DEEPMD INFO    deepmd.train.trainer                          batch    1100 training time 2.01 s, testing time 0.03 s
-[2023-02-13 16:15:28,314] DEEPMD INFO    deepmd.train.trainer                          batch    1200 training time 2.02 s, testing time 0.02 s
-[2023-02-13 16:15:30,496] DEEPMD INFO    deepmd.train.trainer                          batch    1300 training time 2.05 s, testing time 0.02 s
-[2023-02-13 16:15:32,689] DEEPMD INFO    deepmd.train.trainer                          batch    1400 training time 2.04 s, testing time 0.03 s
-[2023-02-13 16:15:34,874] DEEPMD INFO    deepmd.train.trainer                          batch    1500 training time 2.04 s, testing time 0.02 s
-[2023-02-13 16:15:37,058] DEEPMD INFO    deepmd.train.trainer                          batch    1600 training time 2.02 s, testing time 0.02 s
-[2023-02-13 16:15:39,261] DEEPMD INFO    deepmd.train.trainer                          batch    1700 training time 2.05 s, testing time 0.03 s
-[2023-02-13 16:15:41,424] DEEPMD INFO    deepmd.train.trainer                          batch    1800 training time 2.01 s, testing time 0.03 s
-[2023-02-13 16:15:43,606] DEEPMD INFO    deepmd.train.trainer                          batch    1900 training time 2.04 s, testing time 0.02 s
-[2023-02-13 16:15:45,759] DEEPMD INFO    deepmd.train.trainer                          batch    2000 training time 2.01 s, testing time 0.02 s
-[2023-02-13 16:15:46,027] DEEPMD INFO    deepmd.train.trainer                          saved checkpoint model.ckpt
-[2023-02-13 16:15:48,179] DEEPMD INFO    deepmd.train.trainer                          batch    2100 training time 2.00 s, testing time 0.03 s
-[2023-02-13 16:15:50,315] DEEPMD INFO    deepmd.train.trainer                          batch    2200 training time 1.99 s, testing time 0.03 s
-[2023-02-13 16:15:52,454] DEEPMD INFO    deepmd.train.trainer                          batch    2300 training time 2.00 s, testing time 0.03 s
-[2023-02-13 16:15:54,634] DEEPMD INFO    deepmd.train.trainer                          batch    2400 training time 2.04 s, testing time 0.02 s
-[2023-02-13 16:15:56,776] DEEPMD INFO    deepmd.train.trainer                          batch    2500 training time 2.00 s, testing time 0.02 s
-[2023-02-13 16:15:58,930] DEEPMD INFO    deepmd.train.trainer                          batch    2600 training time 2.01 s, testing time 0.02 s
-[2023-02-13 16:16:01,061] DEEPMD INFO    deepmd.train.trainer                          batch    2700 training time 1.99 s, testing time 0.03 s
-[2023-02-13 16:16:03,199] DEEPMD INFO    deepmd.train.trainer                          batch    2800 training time 1.99 s, testing time 0.02 s
-[2023-02-13 16:16:05,339] DEEPMD INFO    deepmd.train.trainer                          batch    2900 training time 1.99 s, testing time 0.02 s
-[2023-02-13 16:16:07,488] DEEPMD INFO    deepmd.train.trainer                          batch    3000 training time 1.99 s, testing time 0.02 s
-[2023-02-13 16:16:09,652] DEEPMD INFO    deepmd.train.trainer                          batch    3100 training time 2.01 s, testing time 0.02 s
-[2023-02-13 16:16:11,796] DEEPMD INFO    deepmd.train.trainer                          batch    3200 training time 2.00 s, testing time 0.02 s
-[2023-02-13 16:16:13,929] DEEPMD INFO    deepmd.train.trainer                          batch    3300 training time 2.00 s, testing time 0.03 s
-[2023-02-13 16:16:16,077] DEEPMD INFO    deepmd.train.trainer                          batch    3400 training time 2.00 s, testing time 0.03 s
-[2023-02-13 16:16:18,228] DEEPMD INFO    deepmd.train.trainer                          batch    3500 training time 2.01 s, testing time 0.02 s
-[2023-02-13 16:16:20,397] DEEPMD INFO    deepmd.train.trainer                          batch    3600 training time 2.03 s, testing time 0.03 s
-[2023-02-13 16:16:22,562] DEEPMD INFO    deepmd.train.trainer                          batch    3700 training time 2.00 s, testing time 0.03 s
-[2023-02-13 16:16:24,701] DEEPMD INFO    deepmd.train.trainer                          batch    3800 training time 2.00 s, testing time 0.02 s
-[2023-02-13 16:16:26,854] DEEPMD INFO    deepmd.train.trainer                          batch    3900 training time 2.01 s, testing time 0.02 s
-[2023-02-13 16:16:29,039] DEEPMD INFO    deepmd.train.trainer                          batch    4000 training time 2.05 s, testing time 0.02 s
-[2023-02-13 16:16:29,240] DEEPMD INFO    deepmd.train.trainer                          saved checkpoint model.ckpt
-[2023-02-13 16:16:31,395] DEEPMD INFO    deepmd.train.trainer                          batch    4100 training time 2.00 s, testing time 0.03 s
-[2023-02-13 16:16:33,562] DEEPMD INFO    deepmd.train.trainer                          batch    4200 training time 2.02 s, testing time 0.02 s
-[2023-02-13 16:16:35,732] DEEPMD INFO    deepmd.train.trainer                          batch    4300 training time 2.01 s, testing time 0.03 s
-[2023-02-13 16:16:37,886] DEEPMD INFO    deepmd.train.trainer                          batch    4400 training time 2.00 s, testing time 0.02 s
-[2023-02-13 16:16:40,043] DEEPMD INFO    deepmd.train.trainer                          batch    4500 training time 2.01 s, testing time 0.03 s
-[2023-02-13 16:16:42,170] DEEPMD INFO    deepmd.train.trainer                          batch    4600 training time 1.99 s, testing time 0.02 s
-[2023-02-13 16:16:44,316] DEEPMD INFO    deepmd.train.trainer                          batch    4700 training time 1.99 s, testing time 0.02 s
-[2023-02-13 16:16:46,446] DEEPMD INFO    deepmd.train.trainer                          batch    4800 training time 1.99 s, testing time 0.02 s
-[2023-02-13 16:16:48,584] DEEPMD INFO    deepmd.train.trainer                          batch    4900 training time 1.98 s, testing time 0.02 s
-[2023-02-13 16:16:50,755] DEEPMD INFO    deepmd.train.trainer                          batch    5000 training time 2.03 s, testing time 0.02 s
-[2023-02-13 16:16:52,925] DEEPMD INFO    deepmd.train.trainer                          batch    5100 training time 2.02 s, testing time 0.02 s
-[2023-02-13 16:16:55,060] DEEPMD INFO    deepmd.train.trainer                          batch    5200 training time 1.98 s, testing time 0.03 s
-[2023-02-13 16:16:57,227] DEEPMD INFO    deepmd.train.trainer                          batch    5300 training time 2.03 s, testing time 0.02 s
-[2023-02-13 16:16:59,393] DEEPMD INFO    deepmd.train.trainer                          batch    5400 training time 2.02 s, testing time 0.02 s
-[2023-02-13 16:17:01,539] DEEPMD INFO    deepmd.train.trainer                          batch    5500 training time 1.99 s, testing time 0.02 s
-[2023-02-13 16:17:03,704] DEEPMD INFO    deepmd.train.trainer                          batch    5600 training time 2.02 s, testing time 0.02 s
-[2023-02-13 16:17:05,857] DEEPMD INFO    deepmd.train.trainer                          batch    5700 training time 2.01 s, testing time 0.02 s
-[2023-02-13 16:17:08,068] DEEPMD INFO    deepmd.train.trainer                          batch    5800 training time 2.05 s, testing time 0.02 s
-[2023-02-13 16:17:10,239] DEEPMD INFO    deepmd.train.trainer                          batch    5900 training time 2.01 s, testing time 0.03 s
-[2023-02-13 16:17:12,431] DEEPMD INFO    deepmd.train.trainer                          batch    6000 training time 2.04 s, testing time 0.02 s
-[2023-02-13 16:17:12,624] DEEPMD INFO    deepmd.train.trainer                          saved checkpoint model.ckpt
-[2023-02-13 16:17:14,785] DEEPMD INFO    deepmd.train.trainer                          batch    6100 training time 2.00 s, testing time 0.03 s
-[2023-02-13 16:17:16,983] DEEPMD INFO    deepmd.train.trainer                          batch    6200 training time 2.05 s, testing time 0.02 s
-[2023-02-13 16:17:19,197] DEEPMD INFO    deepmd.train.trainer                          batch    6300 training time 2.06 s, testing time 0.03 s
-[2023-02-13 16:17:21,391] DEEPMD INFO    deepmd.train.trainer                          batch    6400 training time 2.05 s, testing time 0.01 s
-[2023-02-13 16:17:23,606] DEEPMD INFO    deepmd.train.trainer                          batch    6500 training time 2.04 s, testing time 0.02 s
-[2023-02-13 16:17:25,769] DEEPMD INFO    deepmd.train.trainer                          batch    6600 training time 2.01 s, testing time 0.02 s
-[2023-02-13 16:17:27,912] DEEPMD INFO    deepmd.train.trainer                          batch    6700 training time 2.00 s, testing time 0.03 s
-[2023-02-13 16:17:30,076] DEEPMD INFO    deepmd.train.trainer                          batch    6800 training time 2.03 s, testing time 0.02 s
-[2023-02-13 16:17:32,258] DEEPMD INFO    deepmd.train.trainer                          batch    6900 training time 2.02 s, testing time 0.03 s
-[2023-02-13 16:17:34,412] DEEPMD INFO    deepmd.train.trainer                          batch    7000 training time 2.01 s, testing time 0.02 s
-[2023-02-13 16:17:36,575] DEEPMD INFO    deepmd.train.trainer                          batch    7100 training time 2.01 s, testing time 0.02 s
-[2023-02-13 16:17:38,718] DEEPMD INFO    deepmd.train.trainer                          batch    7200 training time 1.99 s, testing time 0.03 s
-[2023-02-13 16:17:40,912] DEEPMD INFO    deepmd.train.trainer                          batch    7300 training time 2.02 s, testing time 0.03 s
-[2023-02-13 16:17:43,102] DEEPMD INFO    deepmd.train.trainer                          batch    7400 training time 2.03 s, testing time 0.03 s
-[2023-02-13 16:17:45,259] DEEPMD INFO    deepmd.train.trainer                          batch    7500 training time 2.01 s, testing time 0.02 s
-[2023-02-13 16:17:47,411] DEEPMD INFO    deepmd.train.trainer                          batch    7600 training time 2.01 s, testing time 0.02 s
-[2023-02-13 16:17:49,593] DEEPMD INFO    deepmd.train.trainer                          batch    7700 training time 2.02 s, testing time 0.03 s
-[2023-02-13 16:17:51,749] DEEPMD INFO    deepmd.train.trainer                          batch    7800 training time 1.99 s, testing time 0.03 s
-[2023-02-13 16:17:53,877] DEEPMD INFO    deepmd.train.trainer                          batch    7900 training time 1.99 s, testing time 0.03 s
-[2023-02-13 16:17:56,019] DEEPMD INFO    deepmd.train.trainer                          batch    8000 training time 1.99 s, testing time 0.03 s
-[2023-02-13 16:17:56,211] DEEPMD INFO    deepmd.train.trainer                          saved checkpoint model.ckpt
-[2023-02-13 16:17:58,360] DEEPMD INFO    deepmd.train.trainer                          batch    8100 training time 1.99 s, testing time 0.03 s
-[2023-02-13 16:18:00,538] DEEPMD INFO    deepmd.train.trainer                          batch    8200 training time 2.02 s, testing time 0.03 s
-[2023-02-13 16:18:02,737] DEEPMD INFO    deepmd.train.trainer                          batch    8300 training time 2.03 s, testing time 0.02 s
-[2023-02-13 16:18:04,858] DEEPMD INFO    deepmd.train.trainer                          batch    8400 training time 1.96 s, testing time 0.02 s
-[2023-02-13 16:18:07,015] DEEPMD INFO    deepmd.train.trainer                          batch    8500 training time 2.01 s, testing time 0.03 s
-[2023-02-13 16:18:09,140] DEEPMD INFO    deepmd.train.trainer                          batch    8600 training time 1.97 s, testing time 0.02 s
-[2023-02-13 16:18:11,307] DEEPMD INFO    deepmd.train.trainer                          batch    8700 training time 2.00 s, testing time 0.03 s
-[2023-02-13 16:18:13,480] DEEPMD INFO    deepmd.train.trainer                          batch    8800 training time 2.00 s, testing time 0.03 s
-[2023-02-13 16:18:15,582] DEEPMD INFO    deepmd.train.trainer                          batch    8900 training time 1.97 s, testing time 0.02 s
-[2023-02-13 16:18:17,798] DEEPMD INFO    deepmd.train.trainer                          batch    9000 training time 2.02 s, testing time 0.02 s
-[2023-02-13 16:18:19,939] DEEPMD INFO    deepmd.train.trainer                          batch    9100 training time 2.00 s, testing time 0.02 s
-[2023-02-13 16:18:22,059] DEEPMD INFO    deepmd.train.trainer                          batch    9200 training time 1.97 s, testing time 0.02 s
-[2023-02-13 16:18:24,219] DEEPMD INFO    deepmd.train.trainer                          batch    9300 training time 1.99 s, testing time 0.02 s
-[2023-02-13 16:18:26,383] DEEPMD INFO    deepmd.train.trainer                          batch    9400 training time 2.01 s, testing time 0.02 s
-[2023-02-13 16:18:28,556] DEEPMD INFO    deepmd.train.trainer                          batch    9500 training time 2.02 s, testing time 0.03 s
-[2023-02-13 16:18:30,730] DEEPMD INFO    deepmd.train.trainer                          batch    9600 training time 2.03 s, testing time 0.02 s
-[2023-02-13 16:18:32,930] DEEPMD INFO    deepmd.train.trainer                          batch    9700 training time 2.02 s, testing time 0.03 s
-[2023-02-13 16:18:35,089] DEEPMD INFO    deepmd.train.trainer                          batch    9800 training time 2.00 s, testing time 0.03 s
-[2023-02-13 16:18:37,299] DEEPMD INFO    deepmd.train.trainer                          batch    9900 training time 2.06 s, testing time 0.03 s
-[2023-02-13 16:18:39,502] DEEPMD INFO    deepmd.train.trainer                          batch   10000 training time 2.06 s, testing time 0.03 s
-[2023-02-13 16:18:39,699] DEEPMD INFO    deepmd.train.trainer                          saved checkpoint model.ckpt
-[2023-02-13 16:18:39,699] DEEPMD INFO    deepmd.entrypoints.train                      finished training
-[2023-02-13 16:18:39,699] DEEPMD INFO    deepmd.entrypoints.train                      wall time: 218.742 s
+[2023-02-14 02:42:01,006] DEEPMD INFO    deepmd.entrypoints.train                      Calculate neighbor statistics... (add --skip-neighbor-stat to skip this step)
+[2023-02-14 02:42:58,051] DEEPMD INFO    deepmd.utils.neighbor_stat                    training data with min nbor dist: 1.7328681678957543
+[2023-02-14 02:42:58,053] DEEPMD INFO    deepmd.utils.neighbor_stat                    training data with max nbor size: [326]
+[2023-02-14 02:42:58,072] DEEPMD INFO    deepmd.entrypoints.train                       _____               _____   __  __  _____           _     _  _   
+[2023-02-14 02:42:58,072] DEEPMD INFO    deepmd.entrypoints.train                      |  __ \             |  __ \ |  \/  ||  __ \         | |   (_)| |  
+[2023-02-14 02:42:58,072] DEEPMD INFO    deepmd.entrypoints.train                      | |  | |  ___   ___ | |__) || \  / || |  | | ______ | | __ _ | |_ 
+[2023-02-14 02:42:58,072] DEEPMD INFO    deepmd.entrypoints.train                      | |  | | / _ \ / _ \|  ___/ | |\/| || |  | ||______|| |/ /| || __|
+[2023-02-14 02:42:58,072] DEEPMD INFO    deepmd.entrypoints.train                      | |__| ||  __/|  __/| |     | |  | || |__| |        |   < | || |_ 
+[2023-02-14 02:42:58,072] DEEPMD INFO    deepmd.entrypoints.train                      |_____/  \___| \___||_|     |_|  |_||_____/         |_|\_\|_| \__|
+[2023-02-14 02:42:58,072] DEEPMD INFO    deepmd.entrypoints.train                      Please read and cite:
+[2023-02-14 02:42:58,072] DEEPMD INFO    deepmd.entrypoints.train                      Wang, Zhang, Han and E, Comput.Phys.Comm. 228, 178-184 (2018)
+[2023-02-14 02:42:58,072] DEEPMD INFO    deepmd.entrypoints.train                      installed to:         /home/yaoyu/Downloads/git/deepmd-kit/_skbuild/linux-x86_64-3.7/cmake-install
+[2023-02-14 02:42:58,072] DEEPMD INFO    deepmd.entrypoints.train                      source :              v2.0.2-59-gc5f88f3b
+[2023-02-14 02:42:58,072] DEEPMD INFO    deepmd.entrypoints.train                      source brach:         asc-2022
+[2023-02-14 02:42:58,072] DEEPMD INFO    deepmd.entrypoints.train                      source commit:        c5f88f3b
+[2023-02-14 02:42:58,072] DEEPMD INFO    deepmd.entrypoints.train                      source commit at:     2022-01-02 22:27:00 +0800
+[2023-02-14 02:42:58,072] DEEPMD INFO    deepmd.entrypoints.train                      build float prec:     double
+[2023-02-14 02:42:58,072] DEEPMD INFO    deepmd.entrypoints.train                      build with tf inc:    /home/yaoyu/anaconda3/envs/dpsource/lib/python3.7/site-packages/tensorflow/include
+[2023-02-14 02:42:58,072] DEEPMD INFO    deepmd.entrypoints.train                      build with tf lib:    
+[2023-02-14 02:42:58,072] DEEPMD INFO    deepmd.train.run_options                      ---Summary of the training---------------------------------------
+[2023-02-14 02:42:58,072] DEEPMD INFO    deepmd.train.run_options                      running on:           gpu01
+[2023-02-14 02:42:58,073] DEEPMD INFO    deepmd.train.run_options                      computing device:     gpu:0
+[2023-02-14 02:42:58,073] DEEPMD INFO    deepmd.train.run_options                      CUDA_VISIBLE_DEVICES: unset
+[2023-02-14 02:42:58,073] DEEPMD INFO    deepmd.train.run_options                      Count of visible GPU: 2
+[2023-02-14 02:42:58,073] DEEPMD INFO    deepmd.train.run_options                      num_intra_threads:    2
+[2023-02-14 02:42:58,073] DEEPMD INFO    deepmd.train.run_options                      num_inter_threads:    32
+[2023-02-14 02:42:58,073] DEEPMD INFO    deepmd.train.run_options                      -----------------------------------------------------------------
+[2023-02-14 02:42:58,441] DEEPMD INFO    deepmd.utils.data_system                      ---Summary of DataSystem: training     -----------------------------------------------
+[2023-02-14 02:42:58,442] DEEPMD INFO    deepmd.utils.data_system                      found 142 system(s):
+[2023-02-14 02:42:58,442] DEEPMD INFO    deepmd.utils.data_system                                                          system  natoms  bch_sz   n_bch   prob  pbc
+[2023-02-14 02:42:58,442] DEEPMD INFO    deepmd.utils.data_system                      data/cu.fcc.02x02x02/02.md/sys-0032/deepmd      32       1    1000  0.109    T
+[2023-02-14 02:42:58,442] DEEPMD INFO    deepmd.utils.data_system                      data/cu.hcp.02x02x02/02.md/sys-0016/deepmd      16       2     500  0.054    T
+[2023-02-14 02:42:58,442] DEEPMD INFO    deepmd.utils.data_system                      data/cu.bcc.02x02x02/02.md/sys-0016/deepmd      16       2     500  0.054    T
+[2023-02-14 02:42:58,442] DEEPMD INFO    deepmd.utils.data_system                      -- x02.high_pressure/02.md/sys-0032/deepmd      32       1    1580  0.172    T
+[2023-02-14 02:42:58,442] DEEPMD INFO    deepmd.utils.data_system                      -- x02.high_pressure/02.md/sys-0016/deepmd      16       2     770  0.084    T
+[2023-02-14 02:42:58,442] DEEPMD INFO    deepmd.utils.data_system                      -- x02.high_pressure/02.md/sys-0016/deepmd      16       2     800  0.087    T
+[2023-02-14 02:42:58,442] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000000/02.fp/data.008      16       2     150  0.016    T
+[2023-02-14 02:42:58,442] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000000/02.fp/data.016      16       2     150  0.016    T
+[2023-02-14 02:42:58,442] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000000/02.fp/data.000      32       1     300  0.033    T
+[2023-02-14 02:42:58,442] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000007/02.fp/data.023      16       2       2  0.000    T
+[2023-02-14 02:42:58,442] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000008/02.fp/data.008      16       2     150  0.016    T
+[2023-02-14 02:42:58,442] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000008/02.fp/data.016      16       2     150  0.016    T
+[2023-02-14 02:42:58,442] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000008/02.fp/data.000      32       1     300  0.033    T
+[2023-02-14 02:42:58,442] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000010/02.fp/data.018      16       2       3  0.000    T
+[2023-02-14 02:42:58,442] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000010/02.fp/data.002      32       1       9  0.001    T
+[2023-02-14 02:42:58,442] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000010/02.fp/data.010      16       2       3  0.000    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000011/02.fp/data.019      16       2       2  0.000    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000011/02.fp/data.003      32       1       9  0.001    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000011/02.fp/data.011      16       2       3  0.000    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000012/02.fp/data.012      16       2       5  0.001    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000012/02.fp/data.004      32       1       7  0.001    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000013/02.fp/data.005      32       1       7  0.001    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000014/02.fp/data.014      16       2       5  0.001    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000014/02.fp/data.022      16       2       2  0.000    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000014/02.fp/data.006      32       1       6  0.001    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000016/02.fp/data.008      16       2      26  0.003    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000016/02.fp/data.016      16       2     150  0.016    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000016/02.fp/data.000      32       1     300  0.033    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000018/02.fp/data.002      32       1      14  0.002    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000019/02.fp/data.019      16       2       2  0.000    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000019/02.fp/data.003      32       1      14  0.002    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000020/02.fp/data.012      16       2       2  0.000    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000020/02.fp/data.020      16       2       2  0.000    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000020/02.fp/data.004      32       1      10  0.001    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000021/02.fp/data.013      16       2       3  0.000    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000021/02.fp/data.021      16       2       4  0.000    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000021/02.fp/data.005      32       1      27  0.003    T
+[2023-02-14 02:42:58,443] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000022/02.fp/data.006      32       1      12  0.001    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000023/02.fp/data.023      16       2       2  0.000    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000023/02.fp/data.007      32       1       6  0.001    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000023/02.fp/data.015      16       2       3  0.000    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000024/02.fp/data.008      16       2       6  0.001    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000024/02.fp/data.016      16       2       4  0.000    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000024/02.fp/data.000      32       1      16  0.002    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000025/02.fp/data.017      16       2       5  0.001    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000025/02.fp/data.001      32       1      13  0.001    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000026/02.fp/data.018      16       2       8  0.001    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000026/02.fp/data.002      32       1      27  0.003    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000026/02.fp/data.010      16       2      12  0.001    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000027/02.fp/data.019      16       2      33  0.004    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000027/02.fp/data.003      32       1     157  0.017    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000027/02.fp/data.011      16       2      31  0.003    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000029/02.fp/data.013      16       2       3  0.000    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000030/02.fp/data.014      16       2       5  0.001    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000030/02.fp/data.022      16       2       5  0.001    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000030/02.fp/data.006      32       1      17  0.002    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000031/02.fp/data.023      16       2       3  0.000    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000031/02.fp/data.007      32       1       5  0.001    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000031/02.fp/data.015      16       2       4  0.000    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000032/02.fp/data.040      16       2      50  0.005    T
+[2023-02-14 02:42:58,444] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000032/02.fp/data.024      12       3      33  0.004    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000032/02.fp/data.064      16       2      50  0.005    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000032/02.fp/data.048      12       3      33  0.004    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000032/02.fp/data.032      12       3      33  0.004    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000032/02.fp/data.056      12       3      33  0.004    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000033/02.fp/data.065      16       2      37  0.004    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000033/02.fp/data.049      12       3      15  0.002    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000033/02.fp/data.033      12       3      10  0.001    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000033/02.fp/data.057      12       3      22  0.002    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000033/02.fp/data.041      16       2      50  0.005    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000033/02.fp/data.025      12       3       9  0.001    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000034/02.fp/data.066      16       2      49  0.005    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000034/02.fp/data.050      12       3       1  0.000    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000034/02.fp/data.034      12       3       2  0.000    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000034/02.fp/data.058      12       3      19  0.002    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000034/02.fp/data.042      16       2      50  0.005    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000034/02.fp/data.026      12       3       4  0.000    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000036/02.fp/data.064      16       2       6  0.001    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000037/02.fp/data.065      16       2      50  0.005    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000037/02.fp/data.049      12       3       8  0.001    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000037/02.fp/data.033      12       3      13  0.001    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000037/02.fp/data.057      12       3       9  0.001    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000037/02.fp/data.041      16       2      50  0.005    T
+[2023-02-14 02:42:58,445] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000037/02.fp/data.025      12       3       3  0.000    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000038/02.fp/data.066      16       2      50  0.005    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000038/02.fp/data.050      12       3       2  0.000    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000038/02.fp/data.034      12       3       3  0.000    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000038/02.fp/data.058      12       3       6  0.001    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000038/02.fp/data.042      16       2      50  0.005    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000039/02.fp/data.035      12       3       4  0.000    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000039/02.fp/data.059      12       3       3  0.000    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000039/02.fp/data.043      16       2      15  0.002    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000039/02.fp/data.027      12       3       6  0.001    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000039/02.fp/data.067      16       2      38  0.004    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000039/02.fp/data.051      12       3       5  0.001    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000040/02.fp/data.040      16       2      41  0.004    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000040/02.fp/data.024      12       3      13  0.001    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000040/02.fp/data.064      16       2      50  0.005    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000040/02.fp/data.048      12       3      23  0.003    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000040/02.fp/data.032      12       3      12  0.001    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000040/02.fp/data.056      12       3      12  0.001    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000041/02.fp/data.065      16       2      16  0.002    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000041/02.fp/data.049      12       3       6  0.001    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000041/02.fp/data.033      12       3       4  0.000    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000041/02.fp/data.057      12       3       4  0.000    T
+[2023-02-14 02:42:58,446] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000041/02.fp/data.041      16       2      18  0.002    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000041/02.fp/data.025      12       3       3  0.000    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000042/02.fp/data.066      16       2      50  0.005    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000042/02.fp/data.050      12       3       8  0.001    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000042/02.fp/data.034      12       3       5  0.001    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000042/02.fp/data.058      12       3       3  0.000    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000042/02.fp/data.042      16       2      50  0.005    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000042/02.fp/data.026      12       3      33  0.004    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000043/02.fp/data.035      12       3      10  0.001    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000043/02.fp/data.059      12       3      17  0.002    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000043/02.fp/data.043      16       2      50  0.005    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000043/02.fp/data.027      12       3       7  0.001    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000043/02.fp/data.067      16       2      50  0.005    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000043/02.fp/data.051      12       3      15  0.002    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000044/02.fp/data.040      16       2      25  0.003    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000044/02.fp/data.064      16       2      17  0.002    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000044/02.fp/data.048      12       3       3  0.000    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000044/02.fp/data.032      12       3       2  0.000    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000044/02.fp/data.056      12       3       4  0.000    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000045/02.fp/data.065      16       2      21  0.002    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000045/02.fp/data.049      12       3      13  0.001    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000045/02.fp/data.033      12       3       9  0.001    T
+[2023-02-14 02:42:58,447] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000045/02.fp/data.057      12       3       7  0.001    T
+[2023-02-14 02:42:58,448] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000045/02.fp/data.041      16       2      16  0.002    T
+[2023-02-14 02:42:58,448] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000045/02.fp/data.025      12       3       4  0.000    T
+[2023-02-14 02:42:58,448] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000046/02.fp/data.066      16       2      44  0.005    T
+[2023-02-14 02:42:58,448] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000046/02.fp/data.050      12       3      17  0.002    T
+[2023-02-14 02:42:58,448] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000046/02.fp/data.034      12       3      20  0.002    T
+[2023-02-14 02:42:58,448] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000046/02.fp/data.058      12       3      22  0.002    T
+[2023-02-14 02:42:58,448] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000046/02.fp/data.042      16       2      37  0.004    T
+[2023-02-14 02:42:58,448] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000046/02.fp/data.026      12       3      22  0.002    T
+[2023-02-14 02:42:58,448] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000047/02.fp/data.035      12       3      33  0.004    T
+[2023-02-14 02:42:58,448] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000047/02.fp/data.059      12       3      33  0.004    T
+[2023-02-14 02:42:58,448] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000047/02.fp/data.043      16       2      50  0.005    T
+[2023-02-14 02:42:58,448] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000047/02.fp/data.027      12       3      33  0.004    T
+[2023-02-14 02:42:58,448] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000047/02.fp/data.067      16       2      50  0.005    T
+[2023-02-14 02:42:58,448] DEEPMD INFO    deepmd.utils.data_system                                 data/iter.000047/02.fp/data.051      12       3      33  0.004    T
+[2023-02-14 02:42:58,448] DEEPMD INFO    deepmd.utils.data_system                      --------------------------------------------------------------------------------------
+[2023-02-14 02:42:58,448] DEEPMD INFO    deepmd.train.trainer                          training without frame parameter
+[2023-02-14 02:43:09,415] DEEPMD INFO    deepmd.train.trainer                          built lr
+[2023-02-14 02:43:09,961] DEEPMD INFO    deepmd.train.trainer                          built network
+[2023-02-14 02:43:10,688] DEEPMD INFO    deepmd.train.trainer                          built training
+[2023-02-14 02:43:10,733] DEEPMD INFO    deepmd.train.trainer                          initialize model from scratch
+[2023-02-14 02:43:10,922] DEEPMD INFO    deepmd.train.trainer                          start training at lr 1.00e-03 (== 1.00e-03), decay_step 100, decay_rate 0.902500, final lr will be 3.51e-08
+[2023-02-14 02:43:14,069] DEEPMD INFO    deepmd.train.trainer                          batch     100 training time 2.55 s, testing time 0.02 s
+[2023-02-14 02:43:16,324] DEEPMD INFO    deepmd.train.trainer                          batch     200 training time 2.10 s, testing time 0.03 s
+[2023-02-14 02:43:18,469] DEEPMD INFO    deepmd.train.trainer                          batch     300 training time 2.02 s, testing time 0.02 s
+[2023-02-14 02:43:20,611] DEEPMD INFO    deepmd.train.trainer                          batch     400 training time 2.00 s, testing time 0.03 s
+[2023-02-14 02:43:22,874] DEEPMD INFO    deepmd.train.trainer                          batch     500 training time 2.11 s, testing time 0.02 s
+[2023-02-14 02:43:25,141] DEEPMD INFO    deepmd.train.trainer                          batch     600 training time 2.08 s, testing time 0.03 s
+[2023-02-14 02:43:27,315] DEEPMD INFO    deepmd.train.trainer                          batch     700 training time 2.03 s, testing time 0.02 s
+[2023-02-14 02:43:29,543] DEEPMD INFO    deepmd.train.trainer                          batch     800 training time 2.09 s, testing time 0.02 s
+[2023-02-14 02:43:31,741] DEEPMD INFO    deepmd.train.trainer                          batch     900 training time 2.05 s, testing time 0.02 s
+[2023-02-14 02:43:33,931] DEEPMD INFO    deepmd.train.trainer                          batch    1000 training time 2.05 s, testing time 0.02 s
+[2023-02-14 02:43:36,157] DEEPMD INFO    deepmd.train.trainer                          batch    1100 training time 2.07 s, testing time 0.03 s
+[2023-02-14 02:43:38,328] DEEPMD INFO    deepmd.train.trainer                          batch    1200 training time 2.04 s, testing time 0.02 s
+[2023-02-14 02:43:40,547] DEEPMD INFO    deepmd.train.trainer                          batch    1300 training time 2.08 s, testing time 0.03 s
+[2023-02-14 02:43:42,737] DEEPMD INFO    deepmd.train.trainer                          batch    1400 training time 2.04 s, testing time 0.03 s
+[2023-02-14 02:43:44,882] DEEPMD INFO    deepmd.train.trainer                          batch    1500 training time 2.01 s, testing time 0.02 s
+[2023-02-14 02:43:47,064] DEEPMD INFO    deepmd.train.trainer                          batch    1600 training time 2.03 s, testing time 0.02 s
+[2023-02-14 02:43:49,256] DEEPMD INFO    deepmd.train.trainer                          batch    1700 training time 2.05 s, testing time 0.03 s
+[2023-02-14 02:43:51,438] DEEPMD INFO    deepmd.train.trainer                          batch    1800 training time 2.04 s, testing time 0.03 s
+[2023-02-14 02:43:53,612] DEEPMD INFO    deepmd.train.trainer                          batch    1900 training time 2.03 s, testing time 0.02 s
+[2023-02-14 02:43:55,805] DEEPMD INFO    deepmd.train.trainer                          batch    2000 training time 2.05 s, testing time 0.02 s
+[2023-02-14 02:43:56,070] DEEPMD INFO    deepmd.train.trainer                          saved checkpoint model.ckpt
+[2023-02-14 02:43:58,245] DEEPMD INFO    deepmd.train.trainer                          batch    2100 training time 2.03 s, testing time 0.03 s
+[2023-02-14 02:44:00,421] DEEPMD INFO    deepmd.train.trainer                          batch    2200 training time 2.03 s, testing time 0.03 s
+[2023-02-14 02:44:02,597] DEEPMD INFO    deepmd.train.trainer                          batch    2300 training time 2.04 s, testing time 0.03 s
+[2023-02-14 02:44:04,777] DEEPMD INFO    deepmd.train.trainer                          batch    2400 training time 2.05 s, testing time 0.02 s
+[2023-02-14 02:44:07,011] DEEPMD INFO    deepmd.train.trainer                          batch    2500 training time 2.09 s, testing time 0.02 s
+[2023-02-14 02:44:09,182] DEEPMD INFO    deepmd.train.trainer                          batch    2600 training time 2.03 s, testing time 0.02 s
+[2023-02-14 02:44:11,345] DEEPMD INFO    deepmd.train.trainer                          batch    2700 training time 2.03 s, testing time 0.03 s
+[2023-02-14 02:44:13,519] DEEPMD INFO    deepmd.train.trainer                          batch    2800 training time 2.03 s, testing time 0.02 s
+[2023-02-14 02:44:15,725] DEEPMD INFO    deepmd.train.trainer                          batch    2900 training time 2.07 s, testing time 0.03 s
+[2023-02-14 02:44:17,887] DEEPMD INFO    deepmd.train.trainer                          batch    3000 training time 2.02 s, testing time 0.02 s
+[2023-02-14 02:44:20,091] DEEPMD INFO    deepmd.train.trainer                          batch    3100 training time 2.06 s, testing time 0.02 s
+[2023-02-14 02:44:22,263] DEEPMD INFO    deepmd.train.trainer                          batch    3200 training time 2.03 s, testing time 0.02 s
+[2023-02-14 02:44:24,450] DEEPMD INFO    deepmd.train.trainer                          batch    3300 training time 2.05 s, testing time 0.02 s
+[2023-02-14 02:44:26,647] DEEPMD INFO    deepmd.train.trainer                          batch    3400 training time 2.05 s, testing time 0.02 s
+[2023-02-14 02:44:28,830] DEEPMD INFO    deepmd.train.trainer                          batch    3500 training time 2.05 s, testing time 0.02 s
+[2023-02-14 02:44:31,033] DEEPMD INFO    deepmd.train.trainer                          batch    3600 training time 2.07 s, testing time 0.03 s
+[2023-02-14 02:44:33,290] DEEPMD INFO    deepmd.train.trainer                          batch    3700 training time 2.09 s, testing time 0.03 s
+[2023-02-14 02:44:35,466] DEEPMD INFO    deepmd.train.trainer                          batch    3800 training time 2.04 s, testing time 0.02 s
+[2023-02-14 02:44:37,660] DEEPMD INFO    deepmd.train.trainer                          batch    3900 training time 2.06 s, testing time 0.02 s
+[2023-02-14 02:44:39,837] DEEPMD INFO    deepmd.train.trainer                          batch    4000 training time 2.04 s, testing time 0.02 s
+[2023-02-14 02:44:40,028] DEEPMD INFO    deepmd.train.trainer                          saved checkpoint model.ckpt
+[2023-02-14 02:44:42,214] DEEPMD INFO    deepmd.train.trainer                          batch    4100 training time 2.03 s, testing time 0.03 s
+[2023-02-14 02:44:44,338] DEEPMD INFO    deepmd.train.trainer                          batch    4200 training time 1.98 s, testing time 0.02 s
+[2023-02-14 02:44:46,540] DEEPMD INFO    deepmd.train.trainer                          batch    4300 training time 2.05 s, testing time 0.03 s
+[2023-02-14 02:44:48,744] DEEPMD INFO    deepmd.train.trainer                          batch    4400 training time 2.05 s, testing time 0.02 s
+[2023-02-14 02:44:50,949] DEEPMD INFO    deepmd.train.trainer                          batch    4500 training time 2.06 s, testing time 0.03 s
+[2023-02-14 02:44:53,113] DEEPMD INFO    deepmd.train.trainer                          batch    4600 training time 2.03 s, testing time 0.02 s
+[2023-02-14 02:44:55,301] DEEPMD INFO    deepmd.train.trainer                          batch    4700 training time 2.03 s, testing time 0.02 s
+[2023-02-14 02:44:57,457] DEEPMD INFO    deepmd.train.trainer                          batch    4800 training time 2.02 s, testing time 0.02 s
+[2023-02-14 02:44:59,628] DEEPMD INFO    deepmd.train.trainer                          batch    4900 training time 2.01 s, testing time 0.02 s
+[2023-02-14 02:45:01,800] DEEPMD INFO    deepmd.train.trainer                          batch    5000 training time 2.04 s, testing time 0.02 s
+[2023-02-14 02:45:03,998] DEEPMD INFO    deepmd.train.trainer                          batch    5100 training time 2.06 s, testing time 0.02 s
+[2023-02-14 02:45:06,173] DEEPMD INFO    deepmd.train.trainer                          batch    5200 training time 2.03 s, testing time 0.02 s
+[2023-02-14 02:45:08,347] DEEPMD INFO    deepmd.train.trainer                          batch    5300 training time 2.03 s, testing time 0.02 s
+[2023-02-14 02:45:10,542] DEEPMD INFO    deepmd.train.trainer                          batch    5400 training time 2.04 s, testing time 0.02 s
+[2023-02-14 02:45:12,780] DEEPMD INFO    deepmd.train.trainer                          batch    5500 training time 2.08 s, testing time 0.02 s
+[2023-02-14 02:45:14,986] DEEPMD INFO    deepmd.train.trainer                          batch    5600 training time 2.07 s, testing time 0.02 s
+[2023-02-14 02:45:17,130] DEEPMD INFO    deepmd.train.trainer                          batch    5700 training time 2.00 s, testing time 0.02 s
+[2023-02-14 02:45:19,356] DEEPMD INFO    deepmd.train.trainer                          batch    5800 training time 2.07 s, testing time 0.02 s
+[2023-02-14 02:45:21,554] DEEPMD INFO    deepmd.train.trainer                          batch    5900 training time 2.04 s, testing time 0.03 s
+[2023-02-14 02:45:23,737] DEEPMD INFO    deepmd.train.trainer                          batch    6000 training time 2.03 s, testing time 0.02 s
+[2023-02-14 02:45:23,938] DEEPMD INFO    deepmd.train.trainer                          saved checkpoint model.ckpt
+[2023-02-14 02:45:26,135] DEEPMD INFO    deepmd.train.trainer                          batch    6100 training time 2.05 s, testing time 0.03 s
+[2023-02-14 02:45:28,320] DEEPMD INFO    deepmd.train.trainer                          batch    6200 training time 2.04 s, testing time 0.03 s
+[2023-02-14 02:45:30,505] DEEPMD INFO    deepmd.train.trainer                          batch    6300 training time 2.03 s, testing time 0.03 s
+[2023-02-14 02:45:32,656] DEEPMD INFO    deepmd.train.trainer                          batch    6400 training time 2.01 s, testing time 0.02 s
+[2023-02-14 02:45:34,833] DEEPMD INFO    deepmd.train.trainer                          batch    6500 training time 2.02 s, testing time 0.03 s
+[2023-02-14 02:45:36,982] DEEPMD INFO    deepmd.train.trainer                          batch    6600 training time 2.00 s, testing time 0.02 s
+[2023-02-14 02:45:39,126] DEEPMD INFO    deepmd.train.trainer                          batch    6700 training time 2.00 s, testing time 0.03 s
+[2023-02-14 02:45:41,290] DEEPMD INFO    deepmd.train.trainer                          batch    6800 training time 2.03 s, testing time 0.02 s
+[2023-02-14 02:45:43,465] DEEPMD INFO    deepmd.train.trainer                          batch    6900 training time 2.02 s, testing time 0.03 s
+[2023-02-14 02:45:45,623] DEEPMD INFO    deepmd.train.trainer                          batch    7000 training time 2.01 s, testing time 0.02 s
+[2023-02-14 02:45:47,787] DEEPMD INFO    deepmd.train.trainer                          batch    7100 training time 2.02 s, testing time 0.02 s
+[2023-02-14 02:45:49,945] DEEPMD INFO    deepmd.train.trainer                          batch    7200 training time 2.02 s, testing time 0.03 s
+[2023-02-14 02:45:52,145] DEEPMD INFO    deepmd.train.trainer                          batch    7300 training time 2.04 s, testing time 0.03 s
+[2023-02-14 02:45:54,320] DEEPMD INFO    deepmd.train.trainer                          batch    7400 training time 2.02 s, testing time 0.02 s
+[2023-02-14 02:45:56,481] DEEPMD INFO    deepmd.train.trainer                          batch    7500 training time 2.01 s, testing time 0.02 s
+[2023-02-14 02:45:58,631] DEEPMD INFO    deepmd.train.trainer                          batch    7600 training time 2.01 s, testing time 0.02 s
+[2023-02-14 02:46:00,822] DEEPMD INFO    deepmd.train.trainer                          batch    7700 training time 2.04 s, testing time 0.03 s
+[2023-02-14 02:46:02,997] DEEPMD INFO    deepmd.train.trainer                          batch    7800 training time 2.02 s, testing time 0.03 s
+[2023-02-14 02:46:05,205] DEEPMD INFO    deepmd.train.trainer                          batch    7900 training time 2.07 s, testing time 0.03 s
+[2023-02-14 02:46:07,407] DEEPMD INFO    deepmd.train.trainer                          batch    8000 training time 2.05 s, testing time 0.03 s
+[2023-02-14 02:46:07,602] DEEPMD INFO    deepmd.train.trainer                          saved checkpoint model.ckpt
+[2023-02-14 02:46:09,797] DEEPMD INFO    deepmd.train.trainer                          batch    8100 training time 2.03 s, testing time 0.03 s
+[2023-02-14 02:46:11,978] DEEPMD INFO    deepmd.train.trainer                          batch    8200 training time 2.03 s, testing time 0.02 s
+[2023-02-14 02:46:14,158] DEEPMD INFO    deepmd.train.trainer                          batch    8300 training time 2.02 s, testing time 0.02 s
+[2023-02-14 02:46:16,317] DEEPMD INFO    deepmd.train.trainer                          batch    8400 training time 2.01 s, testing time 0.02 s
+[2023-02-14 02:46:18,482] DEEPMD INFO    deepmd.train.trainer                          batch    8500 training time 2.02 s, testing time 0.03 s
+[2023-02-14 02:46:20,636] DEEPMD INFO    deepmd.train.trainer                          batch    8600 training time 2.00 s, testing time 0.02 s
+[2023-02-14 02:46:22,782] DEEPMD INFO    deepmd.train.trainer                          batch    8700 training time 1.99 s, testing time 0.03 s
+[2023-02-14 02:46:24,926] DEEPMD INFO    deepmd.train.trainer                          batch    8800 training time 1.98 s, testing time 0.03 s
+[2023-02-14 02:46:27,050] DEEPMD INFO    deepmd.train.trainer                          batch    8900 training time 1.99 s, testing time 0.02 s
+[2023-02-14 02:46:29,265] DEEPMD INFO    deepmd.train.trainer                          batch    9000 training time 2.03 s, testing time 0.02 s
+[2023-02-14 02:46:31,413] DEEPMD INFO    deepmd.train.trainer                          batch    9100 training time 2.01 s, testing time 0.02 s
+[2023-02-14 02:46:33,572] DEEPMD INFO    deepmd.train.trainer                          batch    9200 training time 2.01 s, testing time 0.02 s
+[2023-02-14 02:46:35,743] DEEPMD INFO    deepmd.train.trainer                          batch    9300 training time 2.00 s, testing time 0.02 s
+[2023-02-14 02:46:37,936] DEEPMD INFO    deepmd.train.trainer                          batch    9400 training time 2.04 s, testing time 0.02 s
+[2023-02-14 02:46:40,118] DEEPMD INFO    deepmd.train.trainer                          batch    9500 training time 2.04 s, testing time 0.02 s
+[2023-02-14 02:46:42,263] DEEPMD INFO    deepmd.train.trainer                          batch    9600 training time 2.01 s, testing time 0.02 s
+[2023-02-14 02:46:44,447] DEEPMD INFO    deepmd.train.trainer                          batch    9700 training time 2.01 s, testing time 0.03 s
+[2023-02-14 02:46:46,609] DEEPMD INFO    deepmd.train.trainer                          batch    9800 training time 2.01 s, testing time 0.03 s
+[2023-02-14 02:46:48,767] DEEPMD INFO    deepmd.train.trainer                          batch    9900 training time 2.02 s, testing time 0.03 s
+[2023-02-14 02:46:50,936] DEEPMD INFO    deepmd.train.trainer                          batch   10000 training time 2.03 s, testing time 0.03 s
+[2023-02-14 02:46:51,116] DEEPMD INFO    deepmd.train.trainer                          saved checkpoint model.ckpt
+[2023-02-14 02:46:51,116] DEEPMD INFO    deepmd.entrypoints.train                      finished training
+[2023-02-14 02:46:51,117] DEEPMD INFO    deepmd.entrypoints.train                      wall time: 220.428 s
